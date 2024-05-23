@@ -1,9 +1,53 @@
+/* Import NotoSansKR fonts */
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/MyCustomFont.woff2') format('woff2'),
-         url('fonts/MyCustomFont.woff') format('woff');
+    font-family: 'NotoSansKR Black';
+    src: url('fonts/NotoSansKR-Black-Hestia.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR Bold';
+    src: url('fonts/NotoSansKR-Bold-Hestia.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR DemiLight';
+    src: url('fonts/NotoSansKR-DemiLight-Hestia.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR Light';
+    src: url('fonts/NotoSansKR-Light-Hestia.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR Medium';
+    src: url('fonts/NotoSansKR-Medium-Hestia.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR Regular';
+    src: url('fonts/NotoSansKR-Regular-Hestia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR Thin';
+    src: url('fonts/NotoSansKR-Thin-Hestia.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
 }
 
 body {
-    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-family: 'NotoSansKR Regular', Arial, sans-serif;
 }
