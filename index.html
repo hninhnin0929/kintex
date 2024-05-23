@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kintex</title>
     <link rel="stylesheet" href="css/main.css">
+        <!-- LINKING JAVASCRIPT FILE -->
+    <script src="js/custom.js"></script>
 </head>
+
 <body>
     <header>
         <div class="inner">
             <div class="left-side">
-                <a href="#home" class="logo-text">KINTEX</a>
-                <nav>
-                    <ul>
-                        <li><a href="#company">참가기업</a></li>
-                        <li><a href="#buyer">바이어</a></li>
-                        <li><a href="#audience">참관객</a></li>
-                        <li><a href="#organizer">주최자</a></li>
-                    </ul>
+                <nav class="navbar">
+                    <div class="brand-title">
+                        <a href="#home" class="logo-text">KINTEX</a>
+                    </div>
+                    <div class="navbar-links">
+                        <ul>
+                            <li><a href="#company">참가기업</a></li>
+                            <li><a href="#buyer">바이어</a></li>
+                            <li><a href="#audience">참관객</a></li>
+                            <li><a href="#organizer">주최자</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
+
             <div class="right-side">
                 <div class="user-actions">
                     <a href="#login">로그인</a>
                     <a href="#signup">회원가입</a>
-                </div>
-                <div class="icons">
-                    <div class="burger-icon">☰</div>
                     <div class="language-dropdown">
                         <button class="dropdown-btn">ENG</button>
                         <div class="dropdown-content">
@@ -35,26 +40,11 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="toggle-button">☰</div>
             </div>
+
         </div>
     </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Webpage</p>
-    </footer>
-    <script src="js/custom.js"></script>
 </body>
 </html>

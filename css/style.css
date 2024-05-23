@@ -33,21 +33,13 @@ nav ul li a:hover {
     margin-right: 1rem;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 .right-side {
+    display: flex;
+    /* align-items: center; */
+}
+
+.user-actions {
     display: flex;
     align-items: center;
 }
@@ -63,7 +55,7 @@ nav ul li a {
     align-items: center;
 }
 
-.burger-icon {
+.toggle-button {
     margin-left: 1rem;
     color: #fff;
     cursor: pointer;
@@ -74,7 +66,7 @@ nav ul li a {
 .language-dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 1.5rem;
+
 }
 
 .dropdown-btn {
@@ -83,7 +75,7 @@ nav ul li a {
     border: none;
     padding: 0.5rem;
     cursor: pointer;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     border-radius: 5px;
     outline: none;
 }
@@ -110,5 +102,88 @@ nav ul li a {
 
 .language-dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.brand-title a{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+/* .toggle-button {
+    position: absolute;
+    top: 1.20rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+} */
+
+/* .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+} */
+
+/* The role of media query is that, it says if certain condition meet run the code of inside it, and if not then don't */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .user-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+        /* padding-top: 35px; */
+    }
+    /* Now the hamburgur menu will be visible */
+    .toggle-button {
+        display: flex;
+    }
+
+    /* Now the links will disapper and */
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+        font-size: 14px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }
 
