@@ -7,3 +7,15 @@ a {
     color: #007BFF;
     text-decoration: none;
 }
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
