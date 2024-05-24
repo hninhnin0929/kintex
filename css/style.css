@@ -175,14 +175,14 @@ header .inner {
 /* Footer styling */
 
 .main-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    z-index: 20;
-    font-size: 11px;
-  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 20;
+  font-size: 11px;
+}
 
 .footer-wrap {
   position: relative;
@@ -231,13 +231,73 @@ header .inner {
 }
 
 .footer-wrap .footer-modal .modal-list ul li:nth-child(1) a {
-    margin-left: 10px;
-  }
+  margin-left: 10px;
+}
 
 .footer-wrap .footer-modal .modal-list ul li:nth-child(n + 2) a {
   margin-left: 10px;
 }
 
+.footer-wrap .address-info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-wrap .address-info .address-cell {
+  font-size: 11px;
+  line-height: 27px;
+  color: #fff;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+}
+
+.footer-wrap .address-info .address-item {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/* Horizontal Line Style */
+.footer-divider {
+  border: 0;
+  height: 1px;
+  margin: 20px 0;
+  background: #444;
+}
+/* Certifications Section */
+.certifications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.certification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.certification img {
+  width: 50px;
+  height: auto;
+}
+
+.certification-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.certification-text div {
+  font-size: 0.8rem;
+}
 /* @media screen and (max-width: 1024px) {
   .main-footer .footer-wrap {
     padding-bottom: 105px;
@@ -296,96 +356,35 @@ header .inner {
   .footer-wrap .footer-modal .brand-title a {
     margin-bottom: 15px;
   }
-}
 
-.footer-wrap  .address-info {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-    .footer-wrap  .address-info {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: flex-start;
-        justify-content: left;
-    }
-    .certifications {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.footer-wrap .address-info .address-cell {
-    font-size: 11px;
-    line-height: 27px;
-    color: #fff;
-    letter-spacing: -0.025em;
-    font-weight: 400;
-}
-
-@media screen and (max-width: 1240px) {
-    .footer-wrap .address-info .address-cell {
-        display: block;
-        font-size: 12px;
-        line-height: 21px;
-    }
-}
-
-.footer-wrap .address-info .address-item {
-    position: relative;
-    display: inline-block;
-    margin-left: 10px;
-    padding-left: 10px;
-}
-@media screen and (max-width: 1240px) {
-    .footer-wrap .address-info .address-cell {
-        display: block;
-        font-size: 12px;
-        line-height: 21px;
-        margin-left: 0;
-        padding-left: 0;
-    }
-}
-/* Horizontal Line Style */
-.footer-divider {
-    border: 0;
-    height: 1px;
-    margin: 20px 0;
-    background: #444;
-}
-/* Certifications Section */
-.certifications {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.certification {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.certification img {
-    width: 50px; 
-    height: auto;
-}
-
-.certification-text {
+  .footer-wrap .address-info {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     text-align: left;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  .certifications {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.certification-text div {
-    font-size: 0.8rem; 
+@media screen and (max-width: 1240px) {
+  .footer-wrap .address-info .address-cell {
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .footer-wrap .address-info .address-cell {
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
