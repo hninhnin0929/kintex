@@ -186,7 +186,7 @@ header .inner {
 
 .footer-wrap {
   position: relative;
-  padding: 50px 0 73px 0;
+  /* padding: 50px 0 73px 0; */
   background-color: #000;
   z-index: 5;
 }
@@ -238,7 +238,7 @@ header .inner {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .main-footer .footer-wrap {
     padding-bottom: 105px;
   }
@@ -248,11 +248,11 @@ header .inner {
   .footer-wrap {
     padding: 50px 10px 105px 10px;
   }
-}
+} */
 
 @media screen and (min-width: 1024px) and (max-height: 800px) {
   .main-footer .footer-wrap {
-    padding: 50px 0;
+    padding: 15px 0;
   }
 }
 
@@ -314,6 +314,10 @@ header .inner {
         align-items: flex-start;
         justify-content: left;
     }
+    .certifications {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer-wrap .address-info .address-cell {
@@ -346,4 +350,42 @@ header .inner {
         margin-left: 0;
         padding-left: 0;
     }
+}
+/* Horizontal Line Style */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    margin: 20px 0;
+    background: #444;
+}
+/* Certifications Section */
+.certifications {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.certification {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.certification img {
+    width: 50px; 
+    height: auto;
+}
+
+.certification-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.certification-text div {
+    font-size: 0.8rem; 
 }
