@@ -297,3 +297,53 @@ header .inner {
     margin-bottom: 15px;
   }
 }
+
+.footer-wrap  .address-info {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrap  .address-info {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: left;
+    }
+}
+
+.footer-wrap .address-info .address-cell {
+    font-size: 11px;
+    line-height: 27px;
+    color: #fff;
+    letter-spacing: -0.025em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1240px) {
+    .footer-wrap .address-info .address-cell {
+        display: block;
+        font-size: 12px;
+        line-height: 21px;
+    }
+}
+
+.footer-wrap .address-info .address-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+@media screen and (max-width: 1240px) {
+    .footer-wrap .address-info .address-cell {
+        display: block;
+        font-size: 12px;
+        line-height: 21px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
