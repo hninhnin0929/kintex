@@ -1,6 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
 body {
-  font-size: 16px;
-  line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -43,3 +53,7 @@ nav ul li a {
   text-decoration: none;
 }
 
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
