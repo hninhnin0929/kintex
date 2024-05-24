@@ -314,6 +314,14 @@ header .inner {
   .main-footer .footer-wrap {
     padding: 15px 0;
   }
+
+  .footer-wrap .address-info {
+    display: inline-block;
+    background-color: #3e4041;
+    border-radius: 10px;
+    padding-right: 10px;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -322,6 +330,13 @@ header .inner {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .footer-wrap .address-info .address-cell {
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -371,20 +386,4 @@ header .inner {
   }
 }
 
-@media screen and (max-width: 1240px) {
-  .footer-wrap .address-info .address-cell {
-    display: block;
-    font-size: 12px;
-    line-height: 21px;
-  }
-}
 
-@media screen and (max-width: 1240px) {
-  .footer-wrap .address-info .address-cell {
-    display: block;
-    font-size: 12px;
-    line-height: 21px;
-    margin-left: 0;
-    padding-left: 0;
-  }
-}
