@@ -247,7 +247,7 @@ header .inner {
 
 .footer-wrap .address-info .address-cell {
   font-size: 11px;
-  line-height: 27px;
+  line-height: 25px;
   color: #fff;
   letter-spacing: -0.025em;
   font-weight: 400;
@@ -256,26 +256,30 @@ header .inner {
 .footer-wrap .address-info .address-item {
   position: relative;
   display: inline-block;
-  margin-left: 10px;
-  padding-left: 10px;
+  padding: 0px 5px 0px 5px;
 }
 
 /* Horizontal Line Style */
+
 .footer-divider {
   border: 0;
   height: 1px;
-  margin: 20px 0;
+  margin-top: 20px;
   background: #444;
+  /* width: 100%; */
+  width: calc(100% + 40px); 
+  margin-left: -40px; 
+  padding-right: 40px; 
 }
+
 /* Certifications Section */
 .certifications {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  gap: 50px;
+  font-size: 11px;
 }
 
 .certification {
@@ -319,7 +323,6 @@ header .inner {
     display: inline-block;
     background-color: #3e4041;
     border-radius: 10px;
-    padding-right: 10px;
   }
 
 }
@@ -379,10 +382,16 @@ header .inner {
     text-align: left;
     align-items: flex-start;
     justify-content: left;
+    margin-left: 10px;
   }
   .certifications {
     flex-direction: column;
     align-items: center;
+    gap: 20px
+  }
+
+  .certification-text div {
+    font-size: 0.6rem;
   }
 }
 
